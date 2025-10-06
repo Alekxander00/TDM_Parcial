@@ -1,23 +1,163 @@
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Plantilla Parcial - Taller Multimedia</title>
-    <link rel="stylesheet" href="/css/style.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <h1 class="title">Parcial — Taller Diseño Multimedia</h1>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mauricio Alekxander - Ingeniero Multimedia</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <h1 class="title">Mauricio Alekxander</h1>
+      <p class="tagline">Ingeniero Multimedia</p>
       <nav class="nav">
-        <button data-link="/" class="nav-btn">Inicio</button>
-        <button data-link="/prueba" class="nav-btn">Acerca</button>
-        <button data-link="/contact" class="nav-btn">Contacto</button>
+        <button data-link="/index" class="nav-btn">Inicio</button>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    
+  <main class="app">
+    <!-- Sección Hero -->
+    <section class="hero">
+      <div class="hero-content">
+        <h2 class="hero-title">Creando experiencias digitales inmersivas</h2>
+        <p class="hero-subtitle">Especializado en diseño interactivo, desarrollo web y animación</p>
+      </div>
+    </section>
 
-    
-    <script src="/js/app.js" defer></script>
-  </body>
+    <!-- Sección Sobre Mí -->
+    <section id="about" class="about-section card">
+      <h2 class="section-title">Sobre Mí</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>Soy Mauricio Alekxander Ordoñez Murillo, ingeniero multimedia apasionado por crear experiencias digitales
+            únicas que combinan arte y tecnología.</p>
+          <p>Mi trabajo se inspira en mundos fantásticos como The Legend of Zelda: Twilight Princess, donde la narrativa
+            visual y la interactividad se fusionan para crear algo verdaderamente especial.</p>
+          <p>Con experiencia en diseño web, desarrollo frontend, animación y diseño de interfaces, busco constantemente
+            nuevos desafíos que me permitan expandir mis habilidades creativas.</p>
+        </div>
+        <div class="about-image">
+          <div class="profile-image-container">
+            <img src="./img/foto-perfil.jpg" alt="Mauricio Alekxander - Ingeniero Multimedia" class="profile-image">
+            <div class="profile-image-overlay">
+              <span>Mauricio Alekxander</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Sección Proyectos -->
+    <section id="projects" class="projects-section">
+      <h2 class="section-title">Mis Proyectos</h2>
+      <div class="projects-grid">
+        <a data-link="/proyecto-consentimientos" class="project-link">
+          <div class="project-card card">
+            <div class="project-image">
+              <div class="placeholder-project medical-project">
+                <span>🏥 Sistema Médico</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Sistema de Gestión de Consentimientos</h3>
+              <p class="project-description">Software para gestión de consentimientos informados en clínicas y
+                hospitales con generación de PDF.</p>
+              <div class="project-tags">
+                <span class="tag">Base de Datos</span>
+                <span class="tag">Backend</span>
+                <span class="tag">PDF</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a data-link="/proyecto-gdd" class="project-link">
+          <div class="project-card card">
+            <div class="project-image">
+              <div class="placeholder-project game-project">
+                <span>🎮 Documento de Diseño</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">GDD - Videojuego</h3>
+              <p class="project-description">Documento completo de diseño de videojuego con mecánicas, narrativa y arte
+                conceptual.</p>
+              <div class="project-tags">
+                <span class="tag">Game Design</span>
+                <span class="tag">Documentación</span>
+                <span class="tag">Narrativa</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a data-link="/proyecto-chat" class="project-link">
+          <div class="project-card card">
+            <div class="project-image">
+              <div class="placeholder-project chat-project">
+                <span>💬 App de Chat</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Nebula Gaming Chat</h3>
+              <p class="project-description">Aplicación de chat en tiempo real con gestión de grupos y roles de
+                administración.</p>
+              <div class="project-tags">
+                <span class="tag">Real-time</span>
+                <span class="tag">WebSockets</span>
+                <span class="tag">Roles</span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contact" class="contact-section card">
+      <h2 class="section-title">Contacto</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <p>¿Tienes un proyecto en mente? ¡Hablemos!</p>
+          <div class="social-links">
+            <a href="https://instagram.com/Alekxander00" class="social-link" target="_blank">
+              <span class="social-icon">📷</span>
+              <span>Instagram</span>
+            </a>
+            <!-- Agregar más redes sociales según necesites -->
+          </div>
+        </div>
+        <form id="contact-form" class="contact-form">
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Enviar Mensaje</button>
+        </form>
+        <div id="contact-result" class="contact-result"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Mauricio Alekxander Ordoñez Murillo. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="/js/app.js"></script>
+</body>
+
 </html>

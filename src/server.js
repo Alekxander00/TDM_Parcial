@@ -10,20 +10,20 @@ app.use(express.static(path.join(__dirname, '..', 'public')));
 
 // API simple de ejemplo
 app.get('/api/status', (req, res) => {
-res.json({ status: 'ok', timestamp: new Date().toISOString() });
+    res.json({ status: 'ok', timestamp: new Date().toISOString() });
 });
 
 
 // Endpoints de ejemplo para pruebas (POST ejemplo)
 app.use(express.json());
 app.post('/api/echo', (req, res) => {
-res.json({ youSent: req.body });
+    res.json({ youSent: req.body });
 });
 
 
 // Ruta explícita para /prueba -> devuelve prueba.html
 app.get('/prueba', (req, res) => {
-res.sendFile(path.join(__dirname, '..', 'public', 'prueba.html'));
+    res.sendFile(path.join(__dirname, '..', 'public', 'prueba.html'));
 });
 
 
@@ -32,5 +32,5 @@ res.sendFile(path.join(__dirname, '..', 'public', 'prueba.html'));
 
 
 app.listen(PORT, () => {
-console.log(`Server running on http://localhost:${PORT}`);
+    console.log(`Server running on http://localhost:${PORT}`);
 });
