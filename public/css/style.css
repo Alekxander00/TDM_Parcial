@@ -20,13 +20,13 @@ html,
 body {
   height: 100%;
   font-family: 'Roboto', sans-serif;
-  background: linear-gradient(135deg, var(--bg-dark) 0%, #1a2434 100%);
+  background: var(--bg-dark);
   color: var(--text-primary);
   line-height: 1.6;
 }
 
 .site-header {
-  background: rgba(10, 14, 20, 0.85);
+  background: rgba(37, 27, 6, 0.85);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border-gold);
   padding: 1.5rem 2rem;
