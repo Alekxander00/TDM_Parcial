@@ -37,7 +37,7 @@
         const href = btn.getAttribute('data-link');
         if (!href) return;
         // redirige a la ruta indicada; provoca recarga normal
-        window.location.href = href;
+        window.location.href = href.endsWith(".html") ? href : `${href}.html`;
       });
       // accesibilidad: permitir activar con Enter cuando el botón tenga focus
       btn.addEventListener('keydown', (ev) => {
