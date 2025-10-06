@@ -1,0 +1,67 @@
+:root {
+  --bg: #0f1724;
+  --card: #0b1220;
+  --text: #e6eef8;
+  --accent: #60a5fa;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Inter, system-ui, Arial;
+  background: linear-gradient(180deg, var(--bg), #071021);
+  color: var(--text);
+}
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(4px);
+}
+.title {
+  margin: 0;
+  font-size: 1.1rem;
+}
+.nav-btn {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 0.5rem 0.75rem;
+  margin-left: 0.5rem;
+  border-radius: 8px;
+  color: var(--text);
+  cursor: pointer;
+}
+.nav-btn:hover {
+  border-color: var(--accent);
+}
+.app {
+  padding: 2rem;
+  min-height: 60vh;
+}
+.card {
+  background: var(--card);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(2, 6, 23, 0.6);
+}
+.site-footer {
+  padding: 1rem 2rem;
+  text-align: center;
+  opacity: 0.7;
+}
+
+/* Responsivo simple */
+@media (max-width: 600px) {
+  .site-header {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .nav-btn {
+    width: 100%;
+  }
+}
